@@ -1,0 +1,137 @@
+/* ----------- 💫 Catppuccin Mocha x JaKooLit 💫 -------- */
+
+{
+"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+"logo": {
+  "type": "small",  // change to "none" if you don't want the ASCII logo
+  "source": "auto",
+  "padding": { "top": 1 }
+},
+
+"display": {
+  "separator": " 󰑃  "
+},
+
+"modules": [
+  "break",
+
+  /* 🐧 OS SECTION */
+  {
+    "type": "os",
+    "key": "  OS",         // change this icon for your distro
+    "keyColor": "#89b4fa"   // Catppuccin Blue
+  },
+  {
+    "type": "kernel",
+    "key": "│ ├",
+    "keyColor": "#f9e2af"   // Yellow
+  },
+  {
+    "type": "packages",
+    "key": "│ ├󰏖",
+    "keyColor": "#a6e3a1"   // Green
+  },
+  {
+    "type": "shell",
+    "key": "│ └",
+    "keyColor": "#f38ba8"   // Red
+  },
+
+  /* 💻 DE/WM SECTION */
+  {
+    "type": "wm",
+    "key": " DE/WM",
+    "keyColor": "#89b4fa"
+  },
+  {
+    "type": "wmtheme",
+    "key": "│ ├󰉼",
+    "keyColor": "#b4befe"
+  },
+  {
+    "type": "icons",
+    "key": "│ ├󰀻",
+    "keyColor": "#cba6f7"
+  },
+  {
+    "type": "cursor",
+    "key": "│ ├",
+    "keyColor": "#94e2d5"
+  },
+  {
+    "type": "terminalfont",
+    "key": "│ ├",
+    "keyColor": "#f5c2e7"
+  },
+  {
+    "type": "terminal",
+    "key": "│ └",
+    "keyColor": "#89b4fa"
+  },
+
+  /* ⚙️ SYSTEM SECTION */
+  {
+    "type": "host",
+    "key": "󰌢 SYSTEM",
+    "keyColor": "#a6e3a1"
+  },
+  {
+    "type": "cpu",
+    "key": "│ ├󰻠",
+    "keyColor": "#f9e2af"
+  },
+  {
+    "type": "gpu",
+    "key": "│ ├󰻑",
+    "format": "{2}",
+    "keyColor": "#cba6f7"
+  },
+  {
+    "type": "display",
+    "key": "│ ├󰍹",
+    "keyColor": "#89b4fa",
+    "compactType": "original-with-refresh-rate"
+  },
+  {
+    "type": "memory",
+    "key": "│ ├󰾆",
+    "keyColor": "#a6e3a1"
+  },
+  {
+    "type": "swap",
+    "key": "│ ├󰓡",
+    "keyColor": "#94e2d5"
+  },
+  {
+    "type": "uptime",
+    "key": "│ └󰅐",
+    "keyColor": "#f38ba8"
+  },
+
+  /* 🔊 AUDIO / MEDIA SECTION */
+  {
+    "type": "sound",
+    "key": " AUDIO",
+    "format": "{2}",
+    "keyColor": "#b4befe"
+  },
+  {
+    "type": "player",
+    "key": "│ ├󰥠",
+    "keyColor": "#cba6f7"
+  },
+  {
+    "type": "media",
+    "key": "│ └󰝚",
+    "keyColor": "#f5c2e7"
+  },
+
+  /* 🎨 COLOR PREVIEW BAR */
+  {
+    "type": "custom",
+    "format": "\u001b[38;5;240m  \u001b[38;5;204m  \u001b[38;5;114m  \u001b[38;5;180m  \u001b[38;5;111m  \u001b[38;5;176m  \u001b[38;5;116m  \u001b[38;5;251m"
+  },
+  "break"
+]
+}
