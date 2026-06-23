@@ -1,0 +1,133 @@
+# ~/.config/starship.toml
+# Teal-on-dark preset tuned to match Colloid/Colloid-Pastel teal-dark theme.
+# Inspired by Catppuccin Mocha + Tokyo Night, with a teal accent.
+
+# Top-level palette — reused by every module below
+palette = "catppuccin_mocha"
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo  = "#f2cdcd"
+pink      = "#f5c2e7"
+mauve     = "#cba6f7"
+red       = "#f38ba8"
+maroon    = "#eba0ac"
+peach     = "#fab387"
+yellow    = "#f9e2af"
+green     = "#a6e3a1"
+teal      = "#94e2d5"
+sky       = "#89dceb"
+sapphire  = "#74c7ec"
+blue      = "#89b4fa"
+lavender  = "#b4befe"
+text      = "#cdd6f4"
+subtext1  = "#bac2de"
+subtext0  = "#a6adc8"
+overlay2  = "#7f849c"
+overlay1  = "#6c7086"
+overlay0  = "#585b70"
+surface2  = "#45475a"
+surface1  = "#313244"
+surface0  = "#1e1e2e"
+base      = "#181825"
+mantle    = "#11111b"
+crust     = "#0b0b11"
+
+# ---- Format ---------------------------------------------------------------
+
+format = """
+[░▒▓](#9ece6d)\
+$os\
+$username\
+[](bg:#313244 fg:#9ece6d)\
+$hostname\
+[](fg:#313244 bg:#45475a)\
+$directory\
+[](fg:#45475a bg:#313244)\
+$git_branch\
+$git_status\
+[](fg:#313244 bg:#45475a)\
+$nodejs\
+$python\
+$rust\
+$docker_context\
+[](fg:#45475a bg:#313244)\
+$time\
+[](fg:#313244)\
+"""
+
+# ---- Prompt look-and-feel -------------------------------------------------
+
+continuation_prompt = "[▸▸](bold #94e2d5) "
+
+# ---- Modules --------------------------------------------------------------
+
+[os]
+disabled = false
+style = "bg:#9ece6d fg:#1e1e2e"
+
+[os.symbols]
+Linux = "󰌽 "
+Macos = " "
+Windows = "󰍲 "
+
+[username]
+show_always = true
+style_user = "bg:#313244 fg:#94e2d5"
+style_root = "bg:#313244 fg:#f38ba8"
+format = "[ $user ]($style)"
+disabled = false
+
+[hostname]
+ssh_only = false
+format = "[ $hostname ](bg:#313244 fg:#f9e2af)"
+disabled = false
+
+[directory]
+style = "bg:#45475a fg:#cdd6f4"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+home_symbol = "󰋜 ~"
+
+[git_branch]
+symbol = ""
+style = "bg:#313244 fg:#89b4fa"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+style = "bg:#313244 fg:#a6e3a1"
+format = "[$all_status$ahead_behind ]($style)"
+
+[nodejs]
+symbol = ""
+style = "bg:#45475a fg:#a6e3a1"
+format = "[ $symbol ($version) ]($style)"
+
+[python]
+symbol = ""
+style = "bg:#45475a fg:#89b4fa"
+format = "[ $symbol ($version) ]($style)"
+
+[rust]
+symbol = ""
+style = "bg:#45475a fg:#fab387"
+format = "[ $symbol ($version) ]($style)"
+
+[docker_context]
+symbol = "󰡨 "
+style = "bg:#45475a fg:#94e2d5"
+format = "[ $symbol $context ]($style)"
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:#313244 fg:#cba6f7"
+format = "[ 󰥔 $time ]($style)"
+
+[character]
+success_symbol = "[➜](bold #94e2d5)"
+error_symbol   = "[✗](bold #f38ba8)"
+
+[battery]
+disabled = true

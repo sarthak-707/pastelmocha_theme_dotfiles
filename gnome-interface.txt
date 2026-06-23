@@ -1,0 +1,14 @@
+# GNOME interface settings (pastel mocha rice reference)
+# Apply with: while read -r k v; do gsettings set org.gnome.desktop.interface "$k" "$v"; done < ... 
+# Or set manually in Settings / dconf.
+
+color-scheme = 'prefer-dark'
+gtk-theme = 'ct-teal-Teal-Dark-Compact'
+icon-theme = 'col_pastel_blue-Blue-Light'
+cursor-theme = 'Colloid-Pastel-cursors-light'
+font-name = 'FantasqueSansM Nerd Font Propo Bold 12'
+monospace-font-name = 'FantasqueSansM Nerd Font Mono Bold 13'
+document-font-name = 'FantasqueSansM Nerd Font 11'
+
+# GTK themes live under ~/.themes/ (symlink gtk-4.0 css from theme dir if needed)
+# Icons: Colloid pastel blue light; cursors: Colloid-Pastel
